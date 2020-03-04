@@ -1,0 +1,94 @@
+body {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.bb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but {
+  margin: 10px;
+  padding: 15px;
+}
+
+.but_u {
+  margin: 10px;
+  padding: 15px;
+}
+
+.shadow-btn {
+  position: relative;
+  padding: 15px 40px;
+  margin: 10px 20px;
+  background: #fff9ef;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fe7660;
+  text-transform: lowercase;
+  border: 2px solid #052464;
+  font-size: 16px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-inner {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  line-height: 1;
+  transform: translateX(0px);
+  transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.btn-inner i {
+  margin-left: 5px;
+  font-size: 14px;
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1), opacity 0.3s;
+}
+
+.shadow {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 100%;
+  height: 100%;
+  background: #98dfd7;
+  z-index: -1;
+  transition: 0.3s ease;
+  transform: translate3d(0, 0, 0);
+}
+
+.shadow-btn:hover .text {
+  transform: translateX(8px);
+}
+.shadow-btn:hover i {
+  transform: translateX(100%);
+  opacity: 0;
+}
+.shadow-btn:hover .shadow {
+  transform: translate3d(3px, 3px, 0);
+}
+
+.tt {
+  margin-left: 50px;
+  font-size: 18px;
+  border: 2px solid #052464;
+}
+
+.int {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.vivod{
+  font-size: 18px;
+  color: black;
+  margin: auto;
+  
+}
